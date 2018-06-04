@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#74bff4"
+	tools:context=".MainActivity">
+
+	<TextView
+		android:id="@+id/label1"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:text="Horizontal"
+		android:background="#ffffff"
+		android:paddingTop="16dp"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent" />
+
+	<HorizontalScrollView
+		android:id="@+id/scrollView1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="#ffffff"
+		android:paddingTop="16dp"
+		android:paddingBottom="16dp"
+		app:layout_constraintTop_toBottomOf="@+id/label1"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Button1" />
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Button2" />
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Button3" />
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Button4" />
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Button5" />
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Button6" />
+		</LinearLayout>
+	</HorizontalScrollView>
+
+	<TextView
+		android:id="@+id/label2"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:text="Vertical"
+		android:layout_marginTop="2dp"
+		android:paddingTop="16dp"
+		android:background="#ffffff"
+		app:layout_constraintTop_toBottomOf="@+id/scrollView1"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent" />
+
+
+	<ScrollView
+		android:id="@+id/scrollView2"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:background="#ffffff"
+		android:paddingTop="16dp"
+		app:layout_constraintTop_toBottomOf="@+id/label2"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Button1" />
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Button2" />
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Button3" />
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Button4" />
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Button5" />
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Button6" />
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Button7" />
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Button8" />
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Button9" />
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Button10" />
+		</LinearLayout>
+	</ScrollView>
+
+</android.support.constraint.ConstraintLayout>
